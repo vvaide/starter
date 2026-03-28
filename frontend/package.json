@@ -1,5 +1,5 @@
 {
-  "name": "vibecode-frontend",
+  "name": "starter-frontend",
   "private": true,
   "version": "0.1.0",
   "type": "module",
@@ -15,7 +15,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.0.0",
-    "@types/react": "^19.0.0",
+    "@types/react": "^19.2.14",
     "@types/react-dom": "^19.0.0",
     "@vitejs/plugin-react": "^4.0.0",
     "eslint": "^9.0.0",

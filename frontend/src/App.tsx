@@ -10,7 +10,7 @@ export function App() {
         fontFamily: "system-ui, -apple-system, sans-serif",
       }}
     >
-      <h1>vibecode scaffold</h1>
+      <h1>Tilt Scaffold</h1>
       <p style={{ color: "#6b7280" }}>
         Your stack is up. Start building.
       </p>

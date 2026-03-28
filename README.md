@@ -1,6 +1,6 @@
-# vibecode scaffold
+# starter scaffold
 
-FastAPI + React + Postgres starter for timed vibecoding sessions.
+FastAPI + React + Postgres starter.
 
 ## Prerequisites
 

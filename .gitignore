@@ -6,6 +6,7 @@ __pycache__/
 dist/
 .venv/
 venv/
+.python-version
 
 node_modules/
 dist/
