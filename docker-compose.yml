@@ -40,5 +40,15 @@ services:
       - ./frontend:/app
       - /app/node_modules
 
+  pgweb:
+    image: sosedoff/pgweb
+    ports:
+      - "8081:8081"
+    environment:
+      PGWEB_DATABASE_URL: postgres://postgres:postgres@db:5432/starter?sslmode=disable
+    depends_on:
+      db:
+        condition: service_healthy
+
 volumes:
   pgdata:
