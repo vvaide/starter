@@ -1,15 +1,19 @@
-from pydantic_settings import BaseSettings
 from functools import lru_cache
+
+from pydantic_settings import BaseSettings
 
 
 class Settings(BaseSettings):
-    app_name: str = "starter"
-    debug: bool = False
-    database_url: str = "postgresql+asyncpg://postgres:postgres@db:5432/starter"
+    app_name: str
+    debug: bool
 
-    @property
-    def database_url_sync(self) -> str:
-        return self.database_url.replace("+asyncpg", "")
+    db_host: str
+    db_port: int
+    db_user: str
+    db_password: str
+    db_name: str
+
+    cors_origins: list[str]
 
     model_config = {"env_file": ".env", "env_file_encoding": "utf-8"}
 
